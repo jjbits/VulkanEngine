@@ -1,7 +1,7 @@
 # VulkanEngine
 [Vulkan(tm)](https://www.khronos.org/vulkan/) based rendering and compute engine prototype work.
 
-This work is heavily referenced and used codes from [SaschaWillems'](https://github.com/SaschaWillems/Vulkan) excellent Vulkan tutorial. Also uses gli, glm, imgui and stb image loader.
+This work heavily references and uses codes from [SaschaWillems'](https://github.com/SaschaWillems/Vulkan) excellent Vulkan tutorial. Also uses gli, glm, imgui and stb image loader.
 
 Only Linux XCB is supported.
 
