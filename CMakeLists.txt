@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 3.8)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake") 
 
-project (vkre)
+project (VKRE)
 
 find_package(Vulkan)
 
@@ -25,9 +25,17 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DVK_USE_PLATFORM_XCB_KHR")
 
 set(ALL_LIBS  ${Vulkan_LIBRARY} ${XCB_LIBRARIES} ${ASSIMP_LIBRARIES})
 
-add_executable(vkre src/base/VkreBase.cpp src/base/VulkanTools.cpp src/base/VulkanDebug.cpp 
+add_executable(cnn src/base/VkreBase.cpp src/base/VulkanTools.cpp src/base/VulkanDebug.cpp 
                     src/base/VulkanUIOverlay.cpp external/imgui/imgui.cpp external/imgui/imgui_draw.cpp
                     src/cnn.cpp)
+
+set_target_properties(cnn PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}")
+
+target_link_libraries(cnn ${ALL_LIBS} )
+
+add_executable(vkre src/base/VkreBase.cpp src/base/VulkanTools.cpp src/base/VulkanDebug.cpp 
+                    src/base/VulkanUIOverlay.cpp external/imgui/imgui.cpp external/imgui/imgui_draw.cpp
+                    src/vkre.cpp)
 
 set_target_properties(vkre PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}")
 
