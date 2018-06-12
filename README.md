@@ -15,3 +15,5 @@ $ make
 <img src="./screenshots/vkre.png">
 
 <img src="./screenshots/f15.png">
+
+<img src="./screenshots/f15_brdf.png>
