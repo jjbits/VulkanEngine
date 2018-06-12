@@ -16,4 +16,4 @@ $ make
 
 <img src="./screenshots/f15.png">
 
-<img src="./screenshots/f15_brdf.png>
+<img src="./screenshots/f15_brdf.png">
