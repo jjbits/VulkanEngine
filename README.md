@@ -8,7 +8,7 @@ Only Linux XCB is supported.
 To build assuming you are in the VulkanEngine directory:
 ```
 $ mkdir build
-$ cd buile
+$ cd build
 $ cmake ..
 $ make
 ```
